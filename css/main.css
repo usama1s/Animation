@@ -1,0 +1,868 @@
+/* GENERAL STYLES - DO NOT EDITED ************************************************************************/
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    /* stop page from scrolling */
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Every element that you want to animate/postion*/
+div, h1, h2, img {
+    position: absolute;
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading img {
+    width: 50px;
+    height: auto;
+}
+
+main {
+    position: relative;
+    width: 960px;
+    height: 600px;
+    overflow: hidden;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.next:hover, .prev:hover, .hover {
+    cursor: pointer;
+}
+
+/* GENERAL STYLES - MAY BE EDITED ************************************************************************/
+.next, .prev {
+    position: absolute;
+    bottom: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.next {
+    right: 60px;
+
+padding-bottom: 50px;
+}
+
+.prev {
+    left: 20px;
+    padding-bottom: 50px;
+}
+
+.next:hover, .prev:hover {
+    color: #000;
+
+}
+
+/* shared screen styles ************************************************************************/
+.eleHover:hover {
+    cursor: pointer;
+}
+
+
+/*play pause button*/
+#playPause{
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 12px;
+    height: 16px;
+
+}
+
+.play{
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #000;
+}
+
+.pause{
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+}
+
+
+
+/******************************************************************** screen 1 styles ************************************************************************/
+#screen1 {
+    background-color: white;
+    background: url(../img/bg1.png);
+    border: solid 1px black;
+
+}
+.car1{
+    width: 150px;
+    margin-left: -500px;
+}
+#screen1 p{
+margin-top: 10px;
+margin-left: 100px;
+font-size: 43pt;
+font-family: Chalkboard SE;
+}
+
+#circle1{
+    padding-left: 30px;
+    padding-top: 155px;
+}
+
+#circle2{
+    margin-left: 75px;
+    margin-top: 160px;
+}
+
+#circle3{
+    margin-left: 150px;
+    margin-top: 170px;
+}
+
+#circle4{
+    margin-left: 270px;
+    margin-top: 150px;
+}
+
+#circle5{
+    margin-left: 435px;
+    margin-top: 75px;
+}
+
+#circle6{
+   margin-top: -45px;
+    right: 360px;
+}
+.car1{
+    margin-top: -340px;
+    width: 150px;
+    margin-left: -500px;
+    margin-left: 750px;
+    top: 255px;
+
+ /*   animation: car1 4s linear infinite;
+    transform: rotate(45deg) translateX(200px) rotate(-45deg);*/
+}
+ @keyframes car1
+ {
+    from { 	transform: rotate(0deg) translateX(150px); }
+	to   {  transform: rotate(-360deg) translateX(150px); }
+}
+
+#ship{
+    margin-top: -145px;
+    margin-left: 590px;
+    top: 255px;
+}
+#plane1{
+    margin-top: 138px;
+    margin-left: 754px;
+    top: 255px;
+}
+
+/**************************************************************** screen 2 styles ************************************************************************/
+
+#screen2 {
+    background-color: white;
+    border: solid 1px black;
+
+}
+
+
+#header1{
+    padding-top: 20px;
+}
+
+/* .circle1text{
+
+
+} */
+
+.acid{
+
+    padding-left: 300px;
+    margin-top: 90px;
+}
+
+
+
+
+#name{
+
+    color: white;
+    margin-top: 20px;
+    font-size: 35px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#earth2{
+
+    margin-top: 220px;
+    margin-left: 330px;
+}
+#piechart0{
+
+    margin-top: 25px;
+    margin-left: 650px;
+
+}
+.circl1{
+
+    margin-top: 110px;
+    margin-left: 90px;
+}
+.circle1text{
+  visibility: hidden;
+  left: 105px;
+  top: 110px;
+  position: fixed;
+  width: 120px;
+  height: 150px;
+  border: 0px solid blue;
+  border-radius: 50%;
+  padding-top: 70px;
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.circl2{
+
+    margin-top: 395px;
+    margin-left: 165px;
+}
+.circle2text{
+  visibility: hidden;
+  left: 180px;
+  top: 390px;
+  position: fixed;
+  width: 120px;
+  height: 150px;
+  border: 0px solid blue;
+  border-radius: 50%;
+  padding-top: 70px;
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.circl3{
+    margin-top: 337px;
+    margin-left: 555px;
+}
+.circle3text{
+  visibility: hidden;
+  left: 570px;
+  top: 337px;
+  position: fixed;
+  width: 120px;
+  height: 150px;
+  border: 0px solid blue;
+  border-radius: 50%;
+  padding-top: 70px;
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#line1{
+    margin-top: 380px;
+    margin-left: 470px;
+}
+#line2{
+    margin-top: 250px;
+    margin-left: 165px;
+}
+#line3{
+    margin-top: 350px;
+    margin-left: 237px;
+}
+
+/************************************************************ screen 3 styles ************************************************************************/
+#screen3 {
+    background-color: white;
+    border: solid 1px black;
+}
+
+
+
+.Acid{
+        margin-left: 220px;
+        margin-top: 140px;
+
+}
+
+.gas1{
+    margin-left: 300px;
+    margin-top: 270px;
+    visibility: hidden;
+    transition-delay: 1s;
+}
+.gas2{
+    padding-left: 420px;
+    margin-top: 120px;
+    visibility: hidden;
+    transition-delay: 5s;
+}
+.gas3{
+    right: 200px;
+    margin-top: 250px;
+    visibility: hidden;
+    transition-delay: 2s;
+}
+#name1{
+
+    color: white;
+    margin-top: 20px;
+    font-size: 35px;
+    padding-left: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#header2{
+    padding-top: 20px;
+}
+#header2 p{
+
+    color: aqua;
+    margin-top: 90px;
+
+}
+
+#road1{
+    margin-top: 475px;
+    padding-left: 0px;
+}
+
+#tree1{
+    padding-left: 20px;
+    margin-top: 365px;
+}
+#tree2{
+    padding-left: 100px;
+    margin-top: 375px;
+}
+
+#stop{
+    padding-left: 430px;
+    margin-top: 405px;
+}
+
+#li1{
+   right: 322px;
+    margin-top: 415px;
+}
+
+#ci1{
+    right: 255px;
+    margin-top: 330px;
+}
+#ri1{
+    right: 132px;
+    margin-top: 415px;
+}
+#car2{
+    padding-left: 290px;
+    margin-top: 432px;
+}
+
+#raincloud1{
+    padding-left: 80px;
+    margin-top: 130px;
+}
+
+#raincloud2{
+    padding-left: 200px;
+    margin-top: 130px;
+}
+
+#clouds1{
+    right: 147px;
+    margin-top: 285px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+#clouds2{
+    right: 190px;
+    margin-top: 287px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+#clouds3{
+    right: 130px;
+    margin-top: 235px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+#clouds4{
+   right: 150px;
+    margin-top: 250px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+#clouds5{
+     right: 180px;
+    margin-top: 250px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+
+#carcloud1{
+    padding-left: 245px;
+    margin-top: 430px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+
+
+#carcloud2{
+     padding-left: 225px;
+    margin-top: 450px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+
+#carcloud3{
+
+    padding-left: 265px;
+    margin-top: 460px;
+    animation: cloudsblink 1.5s linear infinite;
+}
+@keyframes cloudsblink{
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.5;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#uline{
+    padding-left: 300px;
+    margin-top: 170px;
+}
+.ulinevisibility{
+  visibility: hidden;
+  transition-delay: 3s;
+}
+#lline{
+    padding-left: 240px;
+    margin-top: 250px;
+
+}
+.llinevisibility{
+  visibility: hidden;
+  transition-delay: 1s;
+}
+#rline{
+    right: 400px;
+    margin-top: 250px;
+}
+.rlinevisibility{
+  visibility: hidden;
+  transition-delay: 2s;
+}
+
+
+.sun1{
+    right: 120px;
+    margin-top: 20px;
+}
+
+.sun2{
+    right: 120px;
+    margin-top: -500px;
+}
+
+.sunray{
+    right: 320px;
+    margin-top: 70px;
+    visibility: hidden;
+    transition-delay: 4s;
+}
+
+#gases{
+    right: 480px;
+    margin-top: 170px;
+    visibility: hidden;
+}
+.gasesvisibility{
+  visibility: hidden;
+  transition-delay: 5s;
+}
+.show{
+  visibility: visible;
+}
+/********************************************************************* screen 4 styles *********************************************************************/
+#screen4 {
+    background-color: white;
+    border: solid 1px black;
+}
+
+
+#header3{
+    padding-top: 20px;
+}
+
+#name2{
+
+    color: white;
+    margin-top: 20px;
+    font-size: 33px;
+    padding-left: 100px;
+    font-family: Arial,  sans-serif;
+    text-decoration: bold;
+}
+#river{
+     margin-top: 400px;
+
+}
+#question{
+    padding-left: 300px;
+    margin-top: 0px;
+}
+
+#question:hover{
+  cursor: pointer;
+}
+.pie1{
+    margin-top: 120px;
+    padding-left: 70px;
+}
+
+.piep1{
+
+   padding-left: 120px;
+    margin-top: 121px;
+}
+
+.pie2{
+    margin-top: 120px;
+    padding-left: 210px;
+}
+
+.piep2{
+
+   padding-left: 260px;
+    margin-top: 120px;
+}
+
+.pie3{
+    margin-top: 120px;
+    padding-left: 350px;
+}
+
+.piep3{
+
+   padding-left: 400px;
+    margin-top: 120px;
+}
+
+
+
+#lb1{
+    right: 345px;
+    margin-top: 250px;
+}
+
+#rb1{
+    right: 140px;
+    margin-top: 250px;
+}
+
+#cb1{
+    right: 280px;
+    margin-top: 150px;
+}
+
+#pipe{
+    right: 450px;
+    margin-top: 320px
+}
+
+#block{
+   right: 360px;
+    margin-top: 300px;
+}
+
+#waste{
+    padding-left: 420px;
+    margin-top: 323px;
+}
+
+#bottle1{
+     padding-left: 490px;
+    margin-top: 420px;
+    position: relative;
+    animation: canbottlemove 7s linear infinite;
+}
+
+#bottle2{
+     padding-left: 490px;
+    margin-top: 420px;
+    position: relative;
+    animation: canbottlemove 6s linear infinite;
+}
+
+#bottle3{
+  padding-left: 530px;
+    margin-top: 430px;
+    position: relative;
+    animation: canbottlemove 5s linear infinite;
+}
+
+#can1{
+
+    padding-left: 480px;
+    margin-top: 380px;
+    position: relative;
+    animation: canbottlemove 4s linear infinite;
+}
+
+#can2{
+    padding-left: 450px;
+    margin-top: 400px;
+    position: relative;
+    animation: canbottlemove 3s linear infinite;
+}
+
+#can3{
+    padding-left: 450px;
+    margin-top: 430px;
+    position: relative;
+    animation: canbottlemove 8s linear infinite;
+}
+
+@keyframes canbottlemove{
+  0%   {top:0px;}
+  25%  {top:20px;}
+  50%  {top:40px;}
+  75%  {top:10px; }
+  100% {top:0px;}
+}
+
+#fish1{
+     padding-left: 50px;
+    margin-top: 430px;
+    position: relative;
+    animation: fishmove 5s linear infinite;
+}
+
+#fish2{
+     padding-left: 70px;
+    margin-top: 480px;
+    position: relative;
+    animation: fishmove 7s linear infinite;
+}
+
+#fish3{
+    padding-left: 150px;
+    margin-top: 530px;
+    position: relative;
+    animation: fishmove 3s linear infinite;
+}
+
+#fish4{
+    padding-left: 220px;
+    margin-top: 490px;
+    position: relative;
+    animation: fishmove 8s linear infinite;
+}
+
+#fish5{
+    padding-left: 200px;
+    margin-top: 430px;
+    position: relative;
+    animation: fishmove 5s linear infinite;
+}
+
+#fish6{
+     padding-left: 320px;
+    margin-top: -50px;
+    position: relative;
+    animation: fishmove 8s linear infinite;
+}
+
+#fish7{
+      padding-left: 320px;
+    margin-top: 530px;
+    position: relative;
+    animation: fishmove 4s linear infinite;
+}
+
+#fish8{
+    padding-left: 450px;
+    margin-top: 500px;
+    position: relative;
+    animation: fishmove 5s linear infinite;
+}
+
+
+#fish9{
+
+      padding-left: 650px;
+    margin-top: 530px;
+    position: relative;
+    animation: fishmove 4s linear infinite;
+}
+@keyframes fishmove{
+  0%   {left:0px;}
+  25%  {left:50px;}
+  50%  {left:100px;}
+  75%  {left:50px; }
+  100% {left:0px;}
+}
+/************************************************************************screen 5 styles****************************************************************/
+#screen5 {
+    background-color: white;
+    border: solid 1px black;
+}
+
+#header4{
+    padding-top: 20px;
+}
+
+#name3{
+
+    color: white;
+    margin-top: 20px;
+    font-size: 33px;
+    padding-left: 93px;
+    font-family: Arial, sans-serif;
+
+}
+#road2{
+    padding-left: 0px;
+    margin-top: 480px;
+}
+
+#car3{
+    right: 330px;
+    margin-top: 430px;
+}
+
+#car4{
+   right: 450px;
+    margin-top: 437px;
+}
+
+#plane2{
+    padding-left: 260px;
+    margin-top: 150px;
+}
+
+#a5{
+   right: 117px;
+    margin-top: 180px;
+}
+#a5:hover{
+  cursor: pointer;
+}
+.a5text{
+    right: -110px;
+    margin: 0;
+}
+
+#a4{
+    right: 120px;
+    margin-top: 240px;
+}
+#a4:hover{
+  cursor: pointer;
+}
+
+.a4text{
+    right: 40px;
+    margin: 0;
+}
+
+#a3{
+   right:  120px;
+    margin-top: 300px;
+}
+#a3:hover{
+  cursor: pointer;
+}
+.a3text{
+    right: -120px;
+    margin: 0;
+}
+
+#a2{
+    right: 120px;
+    margin-top: 360px;
+}
+#a2:hover{
+  cursor: pointer;
+}
+.a2text{
+    right: 40px;
+    margin: 0;
+}
+
+#a1{
+    right: 115px;
+    margin-top: 417px;
+}
+#a1:hover{
+  cursor: pointer;
+}
+.a1text{
+  right: -110px;
+  margin: 0;
+  height: 60px;
+}
+.hidden{
+  visibility: hidden;
+}
+
+#speaker{
+    padding-left: 400px;
+    margin-top: 432px;
+}
+
+#ho1{
+     margin-top: 410px;
+
+}
+#ho2{
+     margin-top: 345px;
+    padding-left:  80px;
+}
+#ho3{
+     margin-top: 400px;
+    margin-left: 159px;
+}
+#ho4{
+     margin-top: 416px;
+    margin-left: 248px;
+}
+/***********************************************************************screen 6 styles ************************************************************************/
+#screen6 {
+    background: url(../img/bg6.jpg);
+}
